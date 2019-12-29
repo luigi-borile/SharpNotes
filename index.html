@@ -8,19 +8,68 @@
     <title>SharpNotes Clipboard Manager</title>
 
     <style>
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateY(-50%) translateX(-50%);
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            background: rgb(2, 60, 42);
+            background: linear-gradient(0deg, rgba(2, 60, 42, 1) 0%, rgba(3, 91, 64, 1) 35%, rgba(2, 99, 68, 1) 100%);
+        }
+
+        .mspb-link {
+            font-size: 18px !important;
+            font-weight: 600 !important;
+        }
+
+        .container {
+            width: 75%;
+            margin: 5em auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .privacy-header {
+            margin-bottom: 0;
+            color: whitesmoke;
+        }
+
+        .privacy-text {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="centered">
+    <div class="container">
         <div id="mspb-ohsyvc5u7xm5" class="9PFPHC0NFTMX"></div>
+        <br />
+        <h1 class="privacy-header">What data does SharpNotes collect?</h1>
+        <p class="privacy-text">
+            <b>SharpNotes does not send any kind of personal data.</b>
+            <br />
+            <br />
+            It only sends anonymous usage statistics to <i>Microsoft AppCenter</i>.
+            <br />
+            <br />
+            All personal data caming from clipboard and app settings are locally saved on your machine in the app
+            database,
+            <br />
+            which is stored in the app folder provided by Windows during installation.
+            <div>
+        </p>
     </div>
+    </div>
+
     <script src="https://storebadge.azureedge.net/src/badge-1.8.4.js"></script>
     <script>
         mspb({ productId: '9PFPHC0NFTMX', badgeType: 'large' }, function (badge) {
